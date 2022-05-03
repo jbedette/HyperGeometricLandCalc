@@ -1,11 +1,6 @@
 //John Bedette 2022
 //mit liscence, blah blah blah
-#include "math.h"
-#include <iostream>
-#include <string>
-#include <stdexcept>
-#include "card.cpp"
-
+#include "calc.h"
 
 using namespace std;
 
