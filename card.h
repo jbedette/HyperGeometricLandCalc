@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 enum COLOR {WHITE, BLUE, BLACK, RED, GREEN, COLORLESS, GENERIC, ERR};
 enum SUPERTYPE {PERMANENT, TOKEN, STACK, ERR};
@@ -6,6 +7,7 @@ enum TYPE {ARTIFACT, CREATURE, ENCHANTMENT, INSTANT, PLANESWALKER, SORCERY, LAND
 
 
 struct Card{
+  string name;
   int mv;
   COLOR * color;
   COLOR ** cost;
@@ -13,7 +15,7 @@ struct Card{
   TYPE * type;
 
   Card();
-  Card(int, COLOR, TYPE);
+  Card(string, int, COLOR, TYPE);
   ~Card();
   void disp();
 };

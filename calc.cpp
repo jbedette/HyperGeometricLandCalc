@@ -38,8 +38,14 @@ int main(int argc, char * argv[]){
   landsDeck = parseIntFromArg(argv[3]);
   landsHand = parseIntFromArg(argv[4]);
 
+  Card ** deck = NULL;
 
-  //cout << '\n' <<  handSize << ' ' << deckSize << ' ' <<  landsDeck << ' ' << landsHand;
+  for( int i = 0; i < deckSize; ++i){
+
+  }
+
+
+
   return 0;
 }
 

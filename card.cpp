@@ -7,15 +7,13 @@ Card::Card(){
   cost = NULL;
   supertype = NULL;
   type = NULL;
+  name = "uninitialized";
 }
 
 
-Card::Card(
-    int mv, 
-    COLOR color, 
-    TYPE type
-    ){
+Card::Card(string name, int mv, COLOR color, TYPE type){
 
+  name = name;
   mv = mv;
   color = color;
   cost = NULL;
@@ -26,6 +24,13 @@ Card::Card(
 Card::~Card(){};
 
 void Card::disp(){
+  cout << "\n==========";
+  cout << '\n' << name;
+  cout << "\nmv: " << mv << ", ";
+  cout << "color: " << color << ", ";
+  cout << "type: " << type;
+  cout << "\n==========";
+
 
 };
 
